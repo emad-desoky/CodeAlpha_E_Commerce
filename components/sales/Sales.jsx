@@ -30,7 +30,7 @@ const Sales = () => {
           <div className={styles.saleContent}>
             <h2>Fashion Summer Sale</h2>
             <p>Up to 50% off</p>
-            <p>On Top Men's Fashion Brands</p>
+            <p>On Top Mens Fashion Brands</p>
             <button className={styles.button}>Shop Now</button>
           </div>
         </div>
@@ -39,13 +39,13 @@ const Sales = () => {
       <div className={styles.saleCard}>
         <img
           src="https://c.ndtvimg.com/2021-04/8dgceh18_fashion-sale650_625x300_01_April_21.jpg"
-          alt="Women's Fashion Sale"
+          alt="Womens Fashion Sale"
           className={styles.image}
         />
         <div className={styles.saleOverlay}>
           <div className={styles.saleContent}>
             <h2>Fashion Clearance</h2>
-            <p>Buy Women's Fashion Products and get 30% off</p>
+            <p>Buy Womens Fashion Products and get 30% off</p>
             <button className={styles.button}>Shop Now</button>
           </div>
         </div>
