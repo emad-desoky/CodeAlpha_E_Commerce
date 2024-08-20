@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 import { images } from "./images"; // Ensure this is the correct path to your image-data file
 import styles from "./FramerMotion.module.css"; // Import the CSS Module
+import { Typography } from "@mui/material";
 
 const imageVariants = {
   enter: (direction) => ({
@@ -126,15 +127,22 @@ export const FramerMotion = () => {
       </AnimatePresence>
       <div className={styles.imgOverlay}>
         <div className={styles.overlayContent}>
-          <h1>Best Ecommerce Solutions</h1>
-          <h2>To Boost Your Brand Name & Sales</h2>
-          <p>
-            We offer an extensive range of services including website
-            development, SEO optimization, digital marketing, and more.
-            Transform your online presence and increase your sales with our
-            tailored solutions.
-          </p>
-          <button onClick={() => alert("Get Now")}>GET NOW</button>
+          <Typography variant="h2" gutterBottom>
+            Shop the Best Products Online
+          </Typography>
+          <Typography variant="h4" gutterBottom>
+            Discover Incredible Deals & Fast Delivery
+          </Typography>
+          <Typography variant="body2" paragraph style={{ lineHeight: 1.5 }}>
+            From electronics to household essentials, find everything you need
+            at unbeatable prices.
+          </Typography>
+          <Typography variant="body2" paragraph style={{ lineHeight: 1.5 }}>
+            Enjoy seamless shopping with our extensive range of products and
+            top-notch customer service.
+          </Typography>
+
+          <button onClick={() => alert("Shop Now")}>SHOP NOW</button>
         </div>
       </div>
       <div className={styles.next} onClick={() => paginate(1)}>
